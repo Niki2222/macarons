@@ -1,0 +1,116 @@
+/* INDEX */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+:root {
+    --main-color: rgb(252, 125, 146);
+    --text-color: rgb(10, 10, 59);
+    --text-color-white: rgb(255, 255, 255);
+}
+.btn {
+    background-color: var(--text-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 30px; 
+}
+
+/* Header section */
+.nav {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav h1 {
+    padding: 5px;
+}
+.nav_list {
+    display: flex;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+@media screen and (min-width: 768px) {
+    .nav {
+        text-transform: uppercase;
+        
+    }
+    .nav_list {
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+}
+
+/* Main section */
+.container {
+    background-color: var(--main-color);
+}
+.container_article {
+    padding: 10px;
+}
+.container_main_img {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        
+    }
+    .container_article {
+        flex-grow: 1;
+    }
+    .container_main_img {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+footer a {
+    color: var(--text-color-white);
+    text-decoration: none;
+    
+}
+
+/* RECIPE */
+.recipe_main {
+    background-color: var(--text-color);
+}
+.recipe {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.recipe h1 {
+    padding: 20px;
+}
+.recipe h2 {
+    padding: 20px;
+}
+.ingredients_list {
+    background-color: var(--text-color);
+    color: var(--text-color-white);
+    padding-bottom: 20px;
+}
+.recipe .btn a {
+    color: var(--text-color-white);
+}
+ul {
+    list-style: none;
+}
