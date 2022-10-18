@@ -18,6 +18,15 @@ html {
     margin: 10px;
     border-radius: 30px; 
 }
+.btn:hover {
+    background-color: rgb(33, 33, 100);
+}
+.btn a {
+    color: var(--text-color-white);
+}
+ul {
+    list-style: none;
+}
 
 /* Header section */
 .nav {
@@ -86,6 +95,13 @@ footer a {
 }
 
 /* RECIPE */
+.header_recipe {
+    text-align: center;
+
+}
+.header_recipe a {
+    color: var(--text-color-white);
+}
 .recipe_main {
     background-color: var(--text-color);
 }
@@ -94,7 +110,7 @@ footer a {
     color: var(--text-color);
     max-width: 900px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 .recipe h1 {
@@ -108,9 +124,67 @@ footer a {
     color: var(--text-color-white);
     padding-bottom: 20px;
 }
-.recipe .btn a {
-    color: var(--text-color-white);
+
+/* PICTURE */
+.container_picture {
+    background-color: var(--main-color);
 }
-ul {
-    list-style: none;
+.header_picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figure img {
+    width: 100%;
+}
+figure {
+    margin: 30px 10px;
+}
+figcaption {
+    text-align: center;
+}
+.last_picture_none {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .main_figure {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    figure img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .last_picture {
+        display: none;
+    }
+    .last_picture_none {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main_figure {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    figure img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .last_picture {
+        display: none;
+    }
+    .last_picture_none {
+        display: none;
+    } 
+    .last_picture {
+        display: inline-block;
+   
+    }
+    .container_picture {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 }
