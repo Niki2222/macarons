@@ -71,7 +71,6 @@ a {
 @media screen and (min-width: 768px) {
     .container {
         display: flex;
-        
     }
     .container_article {
         flex-grow: 1;
@@ -79,6 +78,15 @@ a {
     .container_main_img {
         width: 50%;
         object-fit: cover;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container_article {
+        padding: 50px;
+        font-size: 1.3rem;
+    }
+    .container_article h2 {
+        margin-bottom: 30px;
     }
 }
 
@@ -117,7 +125,7 @@ footer a {
     padding: 20px;
 }
 .recipe h2 {
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
 }
 .ingredients_list {
     background-color: var(--text-color);
@@ -138,7 +146,7 @@ figure img {
     width: 100%;
 }
 figure {
-    margin: 30px 10px;
+    padding: 10px 10px;
 }
 figcaption {
     text-align: center;
@@ -151,17 +159,21 @@ figcaption {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    figure {
+        padding: 20px 10px;
+    }
     figure img {
         height: 100%;
         object-fit: cover;
     }
-    .last_picture {
-        display: none;
+    .figure_image {
+        object-position: right top;
     }
-    .last_picture_none {
-        display: block;
-        margin: 0 auto;
-        padding: 20px 10px;
+    .last_picture {
+        padding-bottom: 30px;
+    } 
+    .second_last_picture {
+        padding-bottom: 30px;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -186,5 +198,8 @@ figcaption {
     .container_picture {
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+    .third_last_picture {
+        padding-bottom: 30px;
     }
 }
